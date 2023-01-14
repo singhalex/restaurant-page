@@ -1,6 +1,6 @@
 import './style.css';
-import buildMainPage from './mainPage';
 import createNavBar from './navBar';
+import buildMainPage from './mainPage';
 
 // createPage();
 createNavBar();

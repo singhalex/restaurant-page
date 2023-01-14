@@ -2,6 +2,7 @@ import MainImage from './images/main.jpg';
 
 const mainImage = document.createElement('img');
 mainImage.src = MainImage;
+mainImage.setAttribute('id', 'main-image');
 
 // Create the title element
 const restaurantName = 'Le Jardin des Delices';
