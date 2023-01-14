@@ -4,3 +4,10 @@
   /* font-size: 20px; */
   box-sizing: border-box;
 }
+
+#nav-bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
