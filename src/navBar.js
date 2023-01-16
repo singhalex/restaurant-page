@@ -15,5 +15,5 @@ export default function createNavBar() {
   navBar.appendChild(menu);
   navBar.appendChild(contact);
 
-  document.body.appendChild(navBar);
+  document.getElementById('navigation').appendChild(navBar);
 }
