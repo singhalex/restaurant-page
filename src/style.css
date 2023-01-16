@@ -15,6 +15,10 @@
   font-size: 2rem;
 }
 
+#nav-bar > * {
+  cursor: pointer;
+}
+
 #main-image {
   width: 100%;
   max-height: 400px;
