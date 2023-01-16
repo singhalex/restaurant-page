@@ -13,8 +13,10 @@ const descriptionText = "Welcome to Le Jardin des Delices, where you can indulge
 const description = document.createElement('p');
 description.textContent = descriptionText;
 
+const content = document.getElementById('content');
+
 export default function buildMainPage() {
-  document.body.appendChild(mainImage);
-  document.body.appendChild(title);
-  document.body.appendChild(description);
+  content.appendChild(mainImage);
+  content.appendChild(title);
+  content.appendChild(description);
 }
