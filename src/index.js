@@ -1,12 +1,13 @@
 import './style.css';
 import createNavBar from './navBar';
 import buildMainPage from './mainPage';
+import createMenu from './menu';
 
 // Load main page
 createNavBar();
 buildMainPage();
 
-const content = document.getElementById('content');
+// const content = document.getElementById('content');
 function clearPage() {
   content.innerHTML = '';
 }
@@ -18,6 +19,7 @@ home.addEventListener('click', () => {
 
 menu.addEventListener('click', () => {
   clearPage();
+  createMenu();
 });
 
 contact.addEventListener('click', () => {
