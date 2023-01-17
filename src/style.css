@@ -61,7 +61,47 @@ h2 {
   width: min(100%, 500px);
 }
 
+#menu-container {
+  max-width: 800px;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+  .item-container {
+    flex-direction: row;
+  }
+
+  .item-container:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+
+.item-text {
+  padding: 0.5rem;
+  width: min(100%, 600px);
+}
+.item-title {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.item-price {
+  font-style: italic;
+  color: rgb(68, 68, 68);
+}
+
 .menu-picture {
   aspect-ratio: 1;
-  width: 300px;
+  flex: 1;
+  max-width: 350px;
+  object-fit: cover;
 }

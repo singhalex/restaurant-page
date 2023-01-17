@@ -2,7 +2,6 @@ import './style.css';
 import createNavBar from './navBar';
 import buildMainPage from './mainPage';
 import createMenu from './menu';
-
 // Load main page
 createNavBar();
 buildMainPage();
