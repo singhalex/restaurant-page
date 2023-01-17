@@ -2,6 +2,8 @@ import './style.css';
 import createNavBar from './navBar';
 import buildMainPage from './mainPage';
 import createMenu from './menu';
+import buildContact from './contact';
+
 // Load main page
 createNavBar();
 buildMainPage();
@@ -23,4 +25,5 @@ menu.addEventListener('click', () => {
 
 contact.addEventListener('click', () => {
   clearPage();
+  buildContact();
 });

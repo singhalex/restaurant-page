@@ -5,11 +5,13 @@ import Salad from './images/menu/salad.jpg';
 import Salmon from './images/menu/salmon.jpg';
 import Tacos from './images/menu/tacos.jpg';
 
+// An array to collect the menu items
 const menuItems = [];
 
 const menuContainer = document.createElement('div');
 menuContainer.setAttribute('id', 'menu-container');
 
+// Creates objects of different menu items with properties that will be displayed
 const MenuItem = (title, description, price, picture) => ({
   title, description, price, picture,
 });
@@ -44,6 +46,7 @@ tacosPhoto.src = Tacos;
 const tacos = MenuItem('Tacos', 'Our signature dish is a perfect blend of flavors and textures. The tacos are made with fresh, warm corn tortillas and filled with savory sweet potato, black beans, and topped with a delicious citrus slaw. Served with a side of avocado crema, this dish is sure to impress. Perfect for those looking for a satisfying and delicious meal.', '13.99', tacosPhoto);
 menuItems.push(tacos);
 
+// Adds each menu item to the page
 export default function createMenu() {
   menuContainer.innerHTML = '';
   document.getElementById('content').appendChild(menuContainer);
