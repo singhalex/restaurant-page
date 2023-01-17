@@ -1,4 +1,5 @@
 import MainImage from './images/main.jpg';
+import Building from './images/building.jpg';
 
 const mainPageContent = [];
 
@@ -17,6 +18,7 @@ mainPageContent.push(title);
 // Create description
 const descriptionText = "Welcome to Le Jardin des Delices, where you can indulge in delicious cuisine and impeccable service. Our menu features a variety of gourmet dishes made with the freshest ingredients and expertly prepared by our skilled chefs. Whether you're looking for a romantic dinner for two or a special occasion with friends and family, we offer a warm and elegant atmosphere that is sure to impress. Join us for a night of culinary delights and memories that will last a lifetime.";
 const description = document.createElement('p');
+description.setAttribute('id', 'description-text');
 description.textContent = descriptionText;
 mainPageContent.push(description);
 
@@ -57,10 +59,22 @@ hoursContainer.appendChild(saturday);
 mainPageContent.push(hoursContainer);
 
 // Location section
+const locationTitle = document.createElement('h2');
+locationTitle.textContent = 'Location';
+
+mainPageContent.push(locationTitle);
 const locationContainer = document.createElement('div');
 locationContainer.setAttribute('id', 'location-container');
 const address = document.createElement('p');
 address.textContent = '123 Mullberry Dr, Maintown, USA';
+locationContainer.appendChild(address);
+
+const buildingImage = document.createElement('img');
+buildingImage.src = Building;
+buildingImage.setAttribute('id', 'main-building');
+locationContainer.appendChild(buildingImage);
+
+mainPageContent.push(locationContainer);
 
 const content = document.getElementById('content');
 
